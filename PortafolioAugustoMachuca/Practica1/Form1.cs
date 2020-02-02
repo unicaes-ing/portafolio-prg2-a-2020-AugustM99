@@ -40,5 +40,10 @@ namespace Practica1
         {
             Close();
         }
+
+        private void txtProm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

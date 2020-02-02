@@ -78,6 +78,7 @@
             this.txtProm.ReadOnly = true;
             this.txtProm.Size = new System.Drawing.Size(100, 22);
             this.txtProm.TabIndex = 18;
+            this.txtProm.TextChanged += new System.EventHandler(this.txtProm_TextChanged);
             // 
             // txtC3
             // 
