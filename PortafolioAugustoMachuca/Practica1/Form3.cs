@@ -33,10 +33,10 @@ namespace Practica1
 
             totInv = Convert.ToDouble(txtInv1.Text) + Convert.ToDouble(txtInv2.Text) + Convert.ToDouble(txtInv3.Text);
 
-            txtPorcen1.Text = Convert.ToString(((Convert.ToDouble(txtInv1.Text) / totInv) * 100).ToString("N2"));
-            txtPorcen2.Text = Convert.ToString(((Convert.ToDouble(txtInv2.Text) / totInv) * 100).ToString("N2"));
-            txtPorcen3.Text = Convert.ToString(((Convert.ToDouble(txtInv3.Text) / totInv) * 100).ToString("N2"));
-            txtTotInv.Text = totInv.ToString("N2");
+            txtPorcen1.Text = Convert.ToString(((Convert.ToDouble(txtInv1.Text) / totInv) * 100).ToString("N2")) + "%";
+            txtPorcen2.Text = Convert.ToString(((Convert.ToDouble(txtInv2.Text) / totInv) * 100).ToString("N2")) + "%";
+            txtPorcen3.Text = Convert.ToString(((Convert.ToDouble(txtInv3.Text) / totInv) * 100).ToString("N2")) + "%";
+            txtTotInv.Text = totInv.ToString("C2");
             
         }
 

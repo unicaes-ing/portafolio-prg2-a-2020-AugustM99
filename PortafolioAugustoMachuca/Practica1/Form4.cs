@@ -24,7 +24,7 @@ namespace Practica1
             if (cboLibros.SelectedItem.Equals("El principito"))
             {
                 txtSub.Text = (Convert.ToDouble("7.99") * Convert.ToInt32(txtCant.Text)).ToString("N2");
-                imp = Convert.ToDouble(txtSub.Text)*0.13;
+                imp = Convert.ToDouble(txtSub.Text) * 0.13;
                 txtImp.Text = imp.ToString("N2");
                 totPago = Convert.ToDouble(txtSub.Text) + imp;
                 txttotPago.Text = totPago.ToString("N2");
@@ -81,27 +81,27 @@ namespace Practica1
         {
             if (cboLibros.SelectedItem.Equals("El principito"))
             {
-                txtPrecio.Text = "7.99";
+                txtPrecio.Text = "$7.99";
             }
             else if (cboLibros.SelectedItem.Equals("Cálculo Diferencial I"))
             {
-                txtPrecio.Text = "35.00";
+                txtPrecio.Text = "$35.00";
             }
             else if (cboLibros.SelectedItem.Equals("Física para Ingenieros"))
             {
-                txtPrecio.Text = "24.50";
+                txtPrecio.Text = "$24.50";
             }
             else if (cboLibros.SelectedItem.Equals("El Universo, un misterio sin resolver"))
             {
-                txtPrecio.Text = "29.50";
+                txtPrecio.Text = "$29.50";
             }
             else if (cboLibros.SelectedItem.Equals("Atrapados en el espacio"))
             {
-                txtPrecio.Text = "5.99";
+                txtPrecio.Text = "$5.99";
             }
             else 
             {
-                txtPrecio.Text = "52.99";
+                txtPrecio.Text = "$52.99";
             }
 
         }
