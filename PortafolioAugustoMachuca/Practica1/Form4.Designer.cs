@@ -43,6 +43,7 @@
             this.txtSub = new System.Windows.Forms.TextBox();
             this.txtImp = new System.Windows.Forms.TextBox();
             this.txttotPago = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -132,6 +133,7 @@
             // cboLibros
             // 
             this.cboLibros.DisplayMember = "(ninguno)";
+            this.cboLibros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLibros.FormattingEnabled = true;
             this.cboLibros.Items.AddRange(new object[] {
             "El principito",
@@ -144,7 +146,7 @@
             this.cboLibros.Name = "cboLibros";
             this.cboLibros.Size = new System.Drawing.Size(250, 24);
             this.cboLibros.TabIndex = 25;
-            this.cboLibros.Text = "               ------- Elija un libro -------";
+            this.cboLibros.Tag = "";
             this.cboLibros.SelectedIndexChanged += new System.EventHandler(this.cboLibros_SelectedIndexChanged);
             // 
             // txtPrecio
@@ -187,11 +189,21 @@
             this.txttotPago.Size = new System.Drawing.Size(100, 22);
             this.txttotPago.TabIndex = 30;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(74, 78);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(16, 17);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "$";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 373);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txttotPago);
             this.Controls.Add(this.txtImp);
             this.Controls.Add(this.txtSub);
@@ -232,5 +244,6 @@
         private System.Windows.Forms.TextBox txtSub;
         private System.Windows.Forms.TextBox txtImp;
         private System.Windows.Forms.TextBox txttotPago;
+        private System.Windows.Forms.Label label7;
     }
 }
