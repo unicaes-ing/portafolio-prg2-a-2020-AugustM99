@@ -119,5 +119,10 @@ namespace Practica2
             
             Close();
         }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

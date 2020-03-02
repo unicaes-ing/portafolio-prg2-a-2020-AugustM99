@@ -87,6 +87,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(391, 22);
             this.txtCorreo.TabIndex = 8;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             this.txtCorreo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCorreo_Validating);
             this.txtCorreo.Validated += new System.EventHandler(this.txtCorreo_Validated);
             // 
