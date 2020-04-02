@@ -51,7 +51,7 @@ namespace Practica_5
 
         int[,] MatrizA = new int[5, 5];
         int[,] MatrizB = new int[5, 5];
-        //int Result = 0;
+       
         int fil, col;
         private void Form2_Load(object sender, EventArgs e)
         {
