@@ -80,8 +80,9 @@ namespace Practica7
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("No fue posible leer el archivo...");
+                    
                 }
+
                 if (DicMasc.Count > 0)
                 {
                     dataGridView1.Rows.Clear();
@@ -90,11 +91,11 @@ namespace Practica7
                         dataGridView1.Rows.Add(mascota.codigo, mascota.nombre, mascota.propietario, mascota.especie, mascota.Fecha, mascota.peso, mascota.sexo);
                     }
                     dataGridView1.ClearSelection();
-                }
-                else
-                {
-                    MessageBox.Show("No Existen datos almacenados en el archivo...");
-                }
+                }               
+            }
+            else
+            {
+                MessageBox.Show("El archivo no existe.");
             }
         }
 

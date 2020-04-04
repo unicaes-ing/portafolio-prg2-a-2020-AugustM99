@@ -154,11 +154,11 @@ namespace Practica7
         }
 
         private void btnMascotas_Click(object sender, EventArgs e)
-        {
+        {           
             if (dataGridView1.Rows.Count>0)
             {
                 Form2 f2 = new Form2();
-                f2.Show();
+                f2.ShowDialog();
             }
             else
             {
