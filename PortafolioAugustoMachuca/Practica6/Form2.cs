@@ -48,12 +48,10 @@ namespace Practica6
             if (!Regex.IsMatch(txtNombre.Text, patronNombre))
             {
                 errorProvider1.SetError(txtNombre, "Ingrese un nombre válido.");
-
             }
             else
             {
                 errorProvider1.Clear();
-
             }
         }
 

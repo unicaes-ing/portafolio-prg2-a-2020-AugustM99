@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -135,9 +135,9 @@
             this.columnHeader1,
             this.columnHeader2});
             this.lvwClientes.HideSelection = false;
-            listViewItem1.Tag = "Teléfono";
+            listViewItem2.Tag = "Teléfono";
             this.lvwClientes.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.lvwClientes.Location = new System.Drawing.Point(13, 127);
             this.lvwClientes.Name = "lvwClientes";
             this.lvwClientes.Size = new System.Drawing.Size(184, 178);
