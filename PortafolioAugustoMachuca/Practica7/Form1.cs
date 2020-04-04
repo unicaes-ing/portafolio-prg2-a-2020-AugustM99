@@ -155,9 +155,17 @@ namespace Practica7
 
         private void btnMascotas_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-
-            f2.Show();
+            if (dataGridView1.Rows.Count>0)
+            {
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Debe agregar por lo menos un propietario.");
+                txtNombre.Focus();
+            }
+            
         }
     }
 }
